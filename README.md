@@ -33,7 +33,7 @@ This guide explains how to run the provided batch scripts to set up a Spring Boo
    ```
 3. **Run the script for Terminal**:
    ```sh
-   ./setup_SpringBoot_by_Terminal.bat
+   cmd /c setup_SpringBoot_by_Terminal.bat
    ```
 4. The script will perform the same setup process as in CMD.
 
