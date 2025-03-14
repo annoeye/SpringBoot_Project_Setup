@@ -21,7 +21,7 @@ if exist %FOLDER_NAME% (
 
 :: Download the Spring Boot project
 echo Downloading Spring Boot project...
-powershell -Command "Invoke-WebRequest -Uri 'https://start.spring.io/starter.zip?type=%TYPE%&groupId=%GROUP_ID%&artifactId=%ARTIFACT_ID%&packageName=%PACKAGE_NAME%&javaVersion=%JAVA_VERSION%&dependencies=%DEPENDENCIES%&bootVersion=%SPRING_BOOT_VERSION%&language=%LANGUAGE%' -OutFile '%ZIP_FILE%'"
+powershell -Command "Invoke-WebRequest -Uri 'https://start.spring.io/starter.zip?type=%TYPE%&groupId=%GROUP_ID%&artifactId=%ARTIFACT_ID%&name=%ARTIFACT_ID%&packageName=%PACKAGE_NAME%&javaVersion=%JAVA_VERSION%&dependencies=%DEPENDENCIES%&bootVersion=%SPRING_BOOT_VERSION%&language=%LANGUAGE%' -OutFile '%ZIP_FILE%'"
 
 :: Check if the downloaded file is a valid ZIP file
 echo Checking if the file is a valid ZIP...
